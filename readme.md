@@ -28,7 +28,7 @@ npm install sass
 
 setup .prettier.rc
 
-```
+```json
 {
   "arrowParens": "always",
   "bracketSameLine": false,
@@ -50,8 +50,6 @@ setup .prettier.rc
   "useTabs": false,
   "vueIndentScriptAndStyle": false
 }
-
-
 ```
 
 update package.json
