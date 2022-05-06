@@ -1,4 +1,4 @@
-# Getting started with NextJS and SCSS
+# NextJS theme by SCSS and Selection
 
 ### Init project nextjs
 
@@ -90,7 +90,7 @@ usage in index.tsx
 <h1 className={'my-header'}></h1>
 ```
 
-### SCSS variable and selector
+### Theme by SCSS variable and selection
 
 ```scss
 .my-header {
