@@ -87,5 +87,5 @@ import './../styles/index.scss';
 usage in index.tsx
 
 ```tsx
-<h1 className={my - header}></h1>
+<h1 className={'my-header'}></h1>
 ```
