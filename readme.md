@@ -56,7 +56,7 @@ update package.json
 
 ```json
 "scripts": {
-  "dev": "next dev",
+  "dev": "next dev",``
   "build": "next build",
   "start": "next start",
   "lint": "next lint"
@@ -64,7 +64,7 @@ update package.json
 
 ```
 
-### setup scss
+### Hello scss
 
 ```shell
 /src/styles/index.scss
@@ -88,4 +88,43 @@ usage in index.tsx
 
 ```tsx
 <h1 className={'my-header'}></h1>
+```
+
+### SCSS variable and selector
+
+```scss
+.my-header {
+  color: purple;
+}
+
+[entest-docs='dark'] {
+  background-color: orange;
+}
+```
+
+add a button to check
+
+```tsx
+import * as React from 'react';
+
+const HomePage = () => {
+  React.useEffect(() => {
+    document.documentElement.setAttribute('entest-docs', '');
+  }, []);
+
+  return (
+    <div>
+      <h1 className="my-header">This is Hai Tran</h1>
+      <button
+        onClick={() => {
+          document.documentElement.setAttribute('entest-docs', 'dark');
+        }}
+      >
+        Click Me
+      </button>
+    </div>
+  );
+};
+
+export default HomePage;
 ```
