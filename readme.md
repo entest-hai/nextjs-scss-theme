@@ -117,10 +117,23 @@ const HomePage = () => {
       <h1 className="my-header">This is Hai Tran</h1>
       <button
         onClick={() => {
-          document.documentElement.setAttribute('entest-docs', 'dark');
+          document.documentElement.setAttribute('entest-docs', 'orange');
+        }}
+        style={{
+          backgroundColor: 'orange',
         }}
       >
-        Click Me
+        Click Orange Theme
+      </button>
+      <button
+        onClick={() => {
+          document.documentElement.setAttribute('entest-docs', 'aqua');
+        }}
+        style={{
+          backgroundColor: 'aqua',
+        }}
+      >
+        Click Aqua Theme
       </button>
     </div>
   );
